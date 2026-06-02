@@ -11,9 +11,11 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"{src,tests}/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
-    "test": "node scripts/run-jest.js",
-    "test:watch": "node scripts/run-jest.js --watch",
-    "test:coverage": "node scripts/run-jest.js --coverage",
+    "test": "npm run test:grok",
+    "test:grok": "node scripts/run-jest.js --runInBand tests/unit/providers/grok tests/unit/providers/defaultProviderConfigs.test.ts tests/unit/core/providers/modelRouting.test.ts",
+    "test:all": "node scripts/run-jest.js",
+    "test:watch": "node scripts/run-jest.js --watch tests/unit/providers/grok tests/unit/providers/defaultProviderConfigs.test.ts tests/unit/core/providers/modelRouting.test.ts",
+    "test:coverage": "npm run test:grok -- --coverage",
     "version": "node scripts/sync-version.js && git add manifest.json"
   },
   "keywords": [
