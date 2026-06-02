@@ -4,7 +4,7 @@
 ![GitHub release](https://img.shields.io/github/v/release/YuChenSSR/grok-build-obsidian)
 ![License](https://img.shields.io/github/license/YuChenSSR/grok-build-obsidian)
 
-![Preview](Preview.png)
+![Preview](image.png)
 
 An Obsidian plugin that embeds xAI Grok Build in your vault. This project is based on Claudian and modified to adapt Claudian's agent workflow for Grok Build.
 
